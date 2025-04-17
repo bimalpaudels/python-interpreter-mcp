@@ -1,0 +1,17 @@
+[project]
+name = "python-interpreter-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Bimal Paudel", email = "ibimalp@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+python-interpreter-mcp = "python_interpreter_mcp:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
