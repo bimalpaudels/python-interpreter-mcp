@@ -24,7 +24,7 @@ async def execute_script(code: str) -> str:
             text=True,
             timeout=5,
         )
-        return result.stdout
+        return f"Script Output: {result.stdout}"
     except subprocess.TimeoutExpired:
         return "Error: Subprocess timed out."
     except Exception as e:
